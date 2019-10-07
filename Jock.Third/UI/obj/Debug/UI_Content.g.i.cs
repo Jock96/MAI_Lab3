@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/astronaut-helmet-icon.bmp")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/someimage.bmp")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/mona_lisa.bmp")]
 
 

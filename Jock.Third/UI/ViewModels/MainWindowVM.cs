@@ -16,6 +16,9 @@
         public MainWindowVM()
         {
             LoadCommand = new LoadCommand();
+            CompressionCommand = new CompressionCommand();
+
+            _isHaarSelected = true;
         }
 
         #region Изображения.
@@ -82,6 +85,51 @@
         /// Загрузить изображение.
         /// </summary>
         public LoadCommand LoadCommand { get; set; }
+
+        /// <summary>
+        /// Команда преобразования Хаара.
+        /// </summary>
+        public CompressionCommand CompressionCommand { get; set; }
+
+        #endregion
+
+        #region Флаги преобразования.
+
+        /// <summary>
+        /// Выбор преобразования Добеши.
+        /// </summary>
+        private bool _isDaubechiesSelected;
+
+        /// <summary>
+        /// Выбор преобразования Добеши.
+        /// </summary>
+        public bool IsDaubechiesSelected
+        {
+            get => _isDaubechiesSelected;
+            set
+            {
+                _isDaubechiesSelected = value;
+                OnPropertyChanged();
+            }
+        }
+
+        /// <summary>
+        /// Выбор преобразования Хаара.
+        /// </summary>
+        private bool _isHaarSelected;
+
+        /// <summary>
+        /// Выбор преобразования Хаара.
+        /// </summary>
+        public bool IsHaarSelected
+        {
+            get => _isHaarSelected;
+            set
+            {
+                _isHaarSelected = value;
+                OnPropertyChanged();
+            }
+        }
 
         #endregion
     }

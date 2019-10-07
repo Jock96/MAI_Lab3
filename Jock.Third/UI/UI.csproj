@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Commands\BaseCommand.cs" />
     <Compile Include="Commands\BaseTCommand.cs" />
+    <Compile Include="Commands\CompressionCommand.cs" />
     <Compile Include="Commands\LoadCommand.cs" />
     <Compile Include="ViewModels\BaseVM.cs" />
     <Compile Include="ViewModels\MainWindowVM.cs" />
@@ -108,6 +109,9 @@
   <ItemGroup>
     <Resource Include="Resources\astronaut-helmet-icon.bmp" />
     <Resource Include="Resources\someImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mona_Lisa.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

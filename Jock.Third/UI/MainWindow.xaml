@@ -8,7 +8,7 @@
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -25,9 +25,29 @@
         <Button Grid.Row="2" Grid.Column="0" Margin="5"
                 Content="Загрузить" Command="{Binding LoadCommand}"
                 CommandParameter="{Binding}"/>
+        <Button Grid.Row="2" Grid.Column="1" Margin="5"
+                Content="Преобразовать" Command="{Binding CompressionCommand}"
+                CommandParameter="{Binding}"/>
         <Image Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="5" 
                Source="{Binding Image}"/>
         <Image Grid.Row="0" Grid.Column="2" Grid.RowSpan="2"
                Grid.ColumnSpan="2" Margin="5" Source="{Binding ConvertedImage}"/>
+        <Grid Grid.Row="0" Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Использовать преобразование:" Margin="5" 
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"/>
+            <RadioButton Grid.Row="1" Content="Хаара" HorizontalAlignment="Left"
+                         VerticalContentAlignment="Center" Margin="5"
+                         IsChecked="{Binding IsHaarSelected}"/>
+            <RadioButton Grid.Row="2" Content="Добеши" HorizontalAlignment="Left"
+                         VerticalContentAlignment="Center" Margin="5"
+                         IsChecked="{Binding IsDaubechiesSelected}"/>
+        </Grid>
     </Grid>
 </Window>
