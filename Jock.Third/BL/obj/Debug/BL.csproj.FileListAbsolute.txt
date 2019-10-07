@@ -1,0 +1,6 @@
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\bin\Debug\BL.dll
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\bin\Debug\BL.pdb
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\obj\Debug\BL.dll
+C:\Лабы\Учёба (3 семестр)\МИОиАИ\MAI_Lab3\Jock.Third\BL\obj\Debug\BL.pdb
