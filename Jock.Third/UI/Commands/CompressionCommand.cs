@@ -26,7 +26,7 @@
                 parameter.ConvertedImage = parameter.ImageBitmap.CompressionByHaarWavelet();
 
             if (parameter.IsDaubechiesSelected)
-                MessageBox.Show("В стадии реализации!");
+                parameter.ConvertedImage = parameter.ImageBitmap.CompressionByDaubechiesWavelet();
         }
     }
 }
